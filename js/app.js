@@ -25,6 +25,7 @@ let formBox = document.querySelector(".form-box");
 const form = document.getElementById("registrationForm");
 const loader = document.querySelector(".form-overlay-loader");
 let submitBtn = document.querySelector(".submit-btn");
+let cloesForm = document.querySelector(".cloesForm")
 
 openFormBtn.forEach(function (item) {
   item.addEventListener("click", function () {
@@ -33,6 +34,15 @@ openFormBtn.forEach(function (item) {
   });
 });
 
+cloesForm.addEventListener("click", function () {
+  overlay.style.display = "none";
+  formBox.classList.remove("form-box-active");
+});
+
+overlay.addEventListener("click", function () {
+    overlay.style.display = "none";
+    formBox.classList.remove("form-box-active");
+  });
 const phoneInput = document.getElementById("phone");
 phoneInput.addEventListener("input", function (e) {
   let value = e.target.value.replace(/[^\d]/g, "");

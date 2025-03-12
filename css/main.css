@@ -304,6 +304,7 @@ button{
     transform: translateX(-50%) translateY(-50%) scale(0);
     padding: 40px 50px;
     transition: all .3s;
+    border-radius: 10px;
 }
 .form-box-active{
     transform: translateX(-50%) translateY(-50%) scale(1);
@@ -364,6 +365,15 @@ input{
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+.cloesForm{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
 }
 
 @media(max-width:1280px) {
@@ -524,6 +534,25 @@ input{
     }
     .targetItem{
         font-size: 14px;
+    }
+}
+@media(max-width: 560px){
+    .form-box{
+        max-width: 320px;
+        padding: 30px 20px;
+    }
+    .form-box h2{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .form-group{
+        margin-bottom: 15px;
+    }
+    input{
+        padding: 15px;
+    }
+    label{
+        font-size: 18px;
     }
 }
 @media(max-width:450px){
