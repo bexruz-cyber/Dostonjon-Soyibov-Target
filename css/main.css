@@ -394,6 +394,9 @@ input{
     .targetRight {
         display: none;
     }
+    .target{
+        background-position: center right;
+    }
 }
 
 .md-hidden {
