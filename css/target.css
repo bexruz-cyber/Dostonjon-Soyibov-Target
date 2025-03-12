@@ -37,7 +37,7 @@ body {
 }
 
 .targetTitle {
-    font-family: Benzin-Bold;
+    font-family: Benzin-Bold, sans-serif;
     font-weight: 400;
     font-size: 40px;
     line-height: 52px;
@@ -79,7 +79,7 @@ body {
 
 .targetInfoText {
     max-width: 430px;
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-weight: 400;
     font-size: 27px;
     line-height: 30px;
@@ -111,7 +111,7 @@ body {
 .giftText {
     max-width: 222px;
     width: 100%;
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 20px;
@@ -136,7 +136,7 @@ body {
     padding: 21px 41px;
     border: none;
     border-radius: 100px;
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-weight: 700;
     font-size: 30px;
     line-height: 31px;
@@ -165,7 +165,7 @@ body {
         position: static;
     } */
     .giftTextMobile {
-        font-family: Poppins;
+        font-family: Poppins, sans-serif;
         font-weight: 400;
         font-size: 18px;
         line-height: 20px;
