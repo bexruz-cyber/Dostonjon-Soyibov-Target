@@ -389,7 +389,9 @@ input {
 
     font-size: 18px;
 }
-
+.timerBox{
+    display: none;
+}
 
 @media(max-width:1280px) {
     .targetBottom {
@@ -444,6 +446,10 @@ input {
         top: 5px;
     }
 
+    .timerBox{
+        display: flex;
+    }
+    
 
     .targetLeft {
         display: flex;
@@ -484,6 +490,7 @@ input {
         border-radius: 8px;
         padding: 20px 15px;
         margin-bottom: 30px;
+        max-width: 371px;
     }
 
     .md-hidden {
