@@ -171,13 +171,15 @@ body {
         text-align: center;
         color: white;
         max-width: 222px;
-        margin-left: auto;
-        margin-right: auto;
         display: flex;
-        margin-bottom: 20px;
     }
 }
-
+.giftMobile{
+    display: none;
+}
+.mobileGiftBox{
+    display: none;
+}
 @media(max-width: 768px) {
     .targetTitle{
         font-size: 28px;
@@ -195,9 +197,28 @@ body {
         padding: 10px ;
         max-width: 276px;
     }
+    .mobileGiftBox{
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        justify-content: center;
+        gap: 20px;
+    }
+    .giftMobile{
+        display: flex;
+        max-width: 244px;
+        width: 100%;
+        object-fit: cover;
+    }
 }
 
 @media(max-width: 425px) {
+    .mobileGiftBox{
+        flex-direction: column;
+    }
+    .giftMobile{
+        max-width: 200px;
+    }
     .targetTitle{
         font-size: 22px;
         line-height: 24px;
