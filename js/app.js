@@ -152,3 +152,28 @@ form.addEventListener("submit", async function (e) {
     }
   }
 });
+
+function updateTimer() {
+  const targetDate = new Date('March 21, 2025 22:30:00');
+  const now = new Date();
+  const difference = targetDate - now;
+
+  if (difference <= 0) {
+      document.getElementById('timer').innerHTML = "Vaqt tugadi!";
+      return;
+  }
+
+  const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+  const formattedMinutes = minutes.toString().padStart(2, '0');
+  const formattedSeconds = seconds.toString().padStart(2, '0');
+
+  document.getElementById('timer').innerHTML = 
+      `${days} Kun ${hours}:${formattedMinutes}:${formattedSeconds}`;
+}
+
+setInterval(updateTimer, 1000);
+updateTimer();

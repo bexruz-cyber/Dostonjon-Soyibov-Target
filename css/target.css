@@ -33,6 +33,9 @@ body {
     padding-right: 20px;
     width: 100%;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .targetTitle {
@@ -74,7 +77,20 @@ body {
     flex-direction: column;
     align-items: center;
     margin-bottom: 30px;
+    position: relative;
 }
+
+.telegram {
+    position: absolute;
+    left: -20px;
+    top: -20px;
+}
+.telegramright {
+    position: absolute;
+    right: -20px;
+    top: -20px;
+}
+
 
 .targetInfoText {
     max-width: 430px;
@@ -144,17 +160,24 @@ body {
     color: white;
     text-decoration: none;
 }
-.giftTextMobile{
+
+.giftTextMobile {
+    display: none;
+}
+
+.giftMobile {
     display: none;
 }
 
 @media(max-width: 1024px) {
-    .giftImg{
+    .giftImg {
         display: none;
     }
-    .giftText{
+
+    .giftText {
         display: none;
     }
+
     /* .mobileGiftBox{
         display: flex;
         align-items: center;
@@ -170,41 +193,50 @@ body {
         line-height: 20px;
         text-align: center;
         color: white;
-        max-width: 222px;
+        max-width: 260px;
         display: flex;
+        margin-bottom: 30px;
+    }
+
+    .giftMobile {
+        display: flex;
+        margin-top: 30px;
     }
 }
-.giftMobile{
-    display: none;
-}
-.mobileGiftBox{
-    display: none;
-}
+
 @media(max-width: 768px) {
-    .targetTitle{
+    .targetTitle {
         font-size: 28px;
         line-height: 32px;
         max-width: 400px;
         margin-left: auto;
         margin-right: auto;
     }
-    .targetInfoText{
+    .telegramright svg{
+        width: 50px;
+        gap: 40px;
+    }
+
+    .targetInfoText {
         font-size: 18px;
         line-height: 20px;
     }
-    .subsCribeBtn{
+
+    .subsCribeBtn {
         font-size: 18px;
-        padding: 10px ;
+        padding: 10px;
         max-width: 276px;
     }
-    .mobileGiftBox{
+
+    .mobileGiftBox {
         display: flex;
         align-items: center;
         margin-bottom: 30px;
         justify-content: center;
         gap: 20px;
     }
-    .giftMobile{
+
+    .giftMobile {
         display: flex;
         max-width: 244px;
         width: 100%;
@@ -213,13 +245,15 @@ body {
 }
 
 @media(max-width: 425px) {
-    .mobileGiftBox{
+    .mobileGiftBox {
         flex-direction: column;
     }
-    .giftMobile{
+
+    .giftMobile {
         max-width: 200px;
     }
-    .targetTitle{
+
+    .targetTitle {
         font-size: 22px;
         line-height: 24px;
         max-width: 400px;
@@ -227,32 +261,39 @@ body {
         margin-right: auto;
         margin-bottom: 20px;
     }
-    .targetInfoText{
+
+    .targetInfoText {
         font-size: 18px;
         line-height: 20px;
     }
-    .progressBox{
+
+    .progressBox {
         height: 10px;
     }
-    .subsCribeBtn{
+
+    .subsCribeBtn {
         font-size: 14px;
-        padding: 10px ;
+        padding: 10px;
         max-width: 246px;
     }
-    .subsCribeBtn > svg{
+
+    .subsCribeBtn>svg {
         width: 24px;
         height: 24px;
     }
-    .targetInfo{
+
+    .targetInfo {
         padding: 20px;
     }
-    .giftTextMobile{
+
+    .giftTextMobile {
         font-size: 14px;
         line-height: 16px;
     }
 }
-@media(max-width:345px){
-    .targetTitle{
+
+@media(max-width:345px) {
+    .targetTitle {
         font-size: 20px;
     }
 }
