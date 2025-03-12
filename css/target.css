@@ -7,6 +7,7 @@
 @font-face {
     font-family: Benzin-Bold;
     src: url(../font/benzin-bold.otf);
+    font-display: swap;
 }
 
 body {
