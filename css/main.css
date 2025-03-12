@@ -427,6 +427,7 @@ input {
 @media(max-width:768px) {
     .target {
         background-image: url(../img/targetbgMobile.png);
+        padding-bottom: 30px;
     }
 
     .rightInfoListBox {
@@ -491,7 +492,7 @@ input {
         -webkit-backdrop-filter: blur(10px);
         border-radius: 8px;
         padding: 20px 15px;
-        margin-bottom: 30px;
+        margin-bottom: 30px !important;
         max-width: 371px;
     }
 
