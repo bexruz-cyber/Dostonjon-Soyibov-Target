@@ -168,8 +168,14 @@ function updateTimer() {
   const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
+  // Har bir qiymatni ikki xonali qilib formatlash
+  const formattedDays = days.toString().padStart(2, '0');
+  const formattedHours = hours.toString().padStart(2, '0');
+  const formattedMinutes = minutes.toString().padStart(2, '0');
+  const formattedSeconds = seconds.toString().padStart(2, '0');
+
   document.getElementById('timer').innerHTML = 
-      `${days}:${hours}:${minutes}:${seconds}`;
+      `${formattedDays}:${formattedHours}:${formattedMinutes}:${formattedSeconds}`;
 }
 
 // Har 1 sekundda yangilash
