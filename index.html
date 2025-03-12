@@ -8,29 +8,75 @@
     <title>17-18-19 yanvar veb (Target)</title>
 
     <style>
+        .text-white {
+            color: white;
+        }
+
+        .text-green {
+            color: rgb(90, 183, 145);
+        }
+
+        .text-yellow {
+            color: rgb(255, 196, 0);
+        }
+
+        .targetLeft {
+            max-width: 600px;
+            width: 100%;
+            padding-bottom: 30px;
+        }
+
         .targetTitle {
-            font-family: sans-serif;
             font-size: 23px;
             font-weight: 700;
-            color: rgb(255, 196, 0);
+            line-height: 36px;
+            font-family: 'Bebas', Arial, sans-serif;
+            margin-bottom: 10px;
+        }
+
+        .targetTitleMain {
+            max-width: 371px;
+            margin-bottom: 25px;
+        }
+
+        .targetBtnGreen {
+            border-width: 2px;
+            border-radius: 4px 4px 4px 4px;
+            background-color: #5ab791;
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+            max-width: 175px;
+            width: 100%;
+            padding: 5px;
+            font-size: 17px;
+            color: #000;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+
+        .targetInfo {
+            margin-bottom: 80px;
         }
     </style>
     <script defer src="https://connect.facebook.net/en_US/fbevents.js"></script>
     <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
         fbq('init', '2132206370574461');
         fbq('track', 'PageView');
-        </script>
-        <noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=2132206370574461&ev=PageView&noscript=1"
-        /></noscript>
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=2132206370574461&ev=PageView&noscript=1" /></noscript>
 </head>
 
 <body>
@@ -44,7 +90,8 @@
                     1 oyda yangi biznesdan <span class="text-green">36 million</span> foyda qildi
                 </h1>
                 <div class="targetRightMobile">
-                    <img src="./img/targetmobileRight.webp" alt="" class="targetMobileRightBg" width="305" height="auto">
+                    <img src="./img/targetmobileRight.webp" alt="" class="targetMobileRightBg" width="305"
+                        height="auto">
                     <img src="./img/targetRight.webp" alt="" class="targetRightImgMobile" width="305" height="auto">
                     <div class="targetRightTextBox">
                         <div>
@@ -135,7 +182,7 @@
                 </div>
             </div>
             <div class="targetRight">
-                <img src="./img/targetRight.webp"  alt="" class="targetRightImg">
+                <img src="./img/targetRight.webp" alt="" class="targetRightImg">
                 <div class="targetRightTextBox">
                     <div>
                         <div class="rightInfoListBox">
@@ -165,7 +212,10 @@
     </section>
     <div class="form-overlay">
         <button class="cloesForm">
-            <svg xmlns="http://www.w3.org/2000/svg" height="44px" viewBox="0 -960 960 960" width="44px" fill="white"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="44px" viewBox="0 -960 960 960" width="44px" fill="white">
+                <path
+                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg>
         </button>
     </div>
     <div class="form-box">
@@ -178,7 +228,7 @@
             </div>
             <div class="form-group">
                 <label for="phone">Telefon raqamingiz</label>
-                <input value="+998" type="tel" id="phone" name="Telefon raqam" >
+                <input value="+998" type="tel" id="phone" name="Telefon raqam">
 
                 <span class="error-message" id="phoneError"></span>
             </div>
