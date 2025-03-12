@@ -169,6 +169,8 @@ body {
     display: none;
 }
 
+
+
 @media(max-width: 1024px) {
     .giftImg {
         display: none;

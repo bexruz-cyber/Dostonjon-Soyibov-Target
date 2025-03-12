@@ -3,7 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-button{
+
+button {
     cursor: pointer;
 }
 
@@ -157,11 +158,12 @@ button{
 .targetRightMobile {
     display: none;
 }
-.bg-none{
+
+.bg-none {
     display: none;
 }
 
-.targetMobileRightBg{
+.targetMobileRightBg {
     display: none;
 }
 
@@ -203,7 +205,8 @@ button{
     padding: 15px;
     border-radius: 10px;
     transform: translateX(70px);
-    z-index: 10; /* Boshqa elementlar ustiga chiqishi uchun */
+    z-index: 10;
+    /* Boshqa elementlar ustiga chiqishi uchun */
     display: none;
 }
 
@@ -229,7 +232,8 @@ button{
     z-index: 30;
     display: none;
 }
-.form-overlay-loader{
+
+.form-overlay-loader {
     position: fixed;
     top: 0;
     left: 0;
@@ -242,6 +246,7 @@ button{
     align-items: center;
     justify-content: center;
 }
+
 .form-box {
     max-width: 540px;
     width: 100%;
@@ -255,33 +260,39 @@ button{
     transition: all .3s;
     border-radius: 10px;
 }
-.form-box-active{
+
+.form-box-active {
     transform: translateX(-50%) translateY(-50%) scale(1);
-} 
-.form-box h2{
+}
+
+.form-box h2 {
     font-family: sans-serif;
     text-align: center;
     margin-bottom: 30px;
     font-size: 24px;
     font-weight: 600;
 }
+
 .form-group {
     display: grid;
     grid-template-columns: 1fr;
     gap: 7px;
     margin-bottom: 25px;
 }
-label{
+
+label {
     font-size: 20px;
     font-family: sans-serif;
     font-weight: 100;
 }
-input{
+
+input {
     padding: 20px;
     outline: none;
     border-radius: 5px;
     border: 1px solid rgba(128, 128, 128, 0.794);
 }
+
 .submit-btn {
     width: 100%;
     padding: 20px 20px;
@@ -299,9 +310,11 @@ input{
     display: block;
     font-family: sans-serif;
 }
+
 .form-group.invalid input {
     border: 1px solid red;
 }
+
 .loader {
     width: 60px;
     height: 60px;
@@ -311,12 +324,18 @@ input{
     animation: spin 1s linear infinite;
     margin: 20px auto;
 }
+
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
-.cloesForm{
+.cloesForm {
     position: absolute;
     top: 0;
     right: 0;
@@ -324,6 +343,53 @@ input{
     background-color: transparent;
     border: none;
 }
+
+.timerBox {
+    max-width: 371px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.header {
+    color: white;
+
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.timer-container {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+}
+
+#timer {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.labels {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-top: 10px;
+    color: white;
+
+    font-size: 18px;
+}
+
 
 @media(max-width:1280px) {
     .targetBottom {
@@ -334,7 +400,9 @@ input{
         left: 0;
     }
 
-    .targetRight, .rightInfoListBox, .targetRightTextBox {
+    .targetRight,
+    .rightInfoListBox,
+    .targetRightTextBox {
         transform: translateX(0);
     }
 }
@@ -343,7 +411,8 @@ input{
     .targetRight {
         display: none;
     }
-    .target{
+
+    .target {
         background-position: center right;
     }
 
@@ -357,21 +426,24 @@ input{
     .target {
         background-image: url(../img/targetbgMobile.png);
     }
-    .rightInfoListBox{
+
+    .rightInfoListBox {
         right: 0;
     }
-    .targetRightTextImg{
+
+    .targetRightTextImg {
         max-width: 150px;
         margin-left: auto;
     }
-    .presentation{
+
+    .presentation {
         left: 80%;
         transition: all .3;
         width: 15px;
         height: 15px;
         top: 5px;
     }
-    
+
 
     .targetLeft {
         display: flex;
@@ -412,7 +484,6 @@ input{
         border-radius: 8px;
         padding: 20px 15px;
         margin-bottom: 30px;
-        max-width: 305px;
     }
 
     .md-hidden {
@@ -429,10 +500,11 @@ input{
         gap: 0;
     }
 
-    .targetBottom{
+    .targetBottom {
         padding-left: 0;
         margin-bottom: 30px;
     }
+
     .targetPricebox div {
         display: flex;
         gap: 20px;
@@ -445,16 +517,20 @@ input{
         border-radius: 8px;
         padding-bottom: 15px;
     }
-    .targetArrow{
+
+    .targetArrow {
         display: none;
     }
-    .targetGiftImg{
+
+    .targetGiftImg {
         max-width: 62px;
     }
-    .targetGiftText br{
+
+    .targetGiftText br {
         display: none;
     }
-    .targetBtnRed{
+
+    .targetBtnRed {
         border-radius: 8px;
         padding: 15px 20px;
         min-height: auto;
@@ -467,54 +543,67 @@ input{
     .max-md-hidden {
         display: none;
     }
-    .targetSale{
+
+    .targetSale {
         font-size: 20px;
     }
-    .targetSaleFree{
+
+    .targetSaleFree {
         font-size: 20px;
     }
-    .bg-none div{
+
+    .bg-none div {
         background-color: transparent;
         backdrop-filter: blur(0px);
         -webkit-backdrop-filter: blur(0px);
     }
-    .bg-none{
+
+    .bg-none {
         display: flex;
         margin-bottom: 0;
     }
-    .targetSubtitle{
+
+    .targetSubtitle {
         font-size: 18px;
     }
-    .targetItem{
+
+    .targetItem {
         font-size: 14px;
     }
 }
-@media(max-width: 560px){
-    .form-box{
+
+@media(max-width: 560px) {
+    .form-box {
         max-width: 320px;
         padding: 30px 20px;
     }
-    .form-box h2{
+
+    .form-box h2 {
         font-size: 20px;
         margin-bottom: 20px;
     }
-    .form-group{
+
+    .form-group {
         margin-bottom: 15px;
     }
-    input{
+
+    input {
         padding: 15px;
     }
-    label{
+
+    label {
         font-size: 18px;
     }
 }
-@media(max-width:450px){
-    .targetTitle{
+
+@media(max-width:450px) {
+    .targetTitle {
         font-size: 20px;
         line-height: 22px;
         margin-bottom: 10px;
     }
-    .targetBtnGreen{
+
+    .targetBtnGreen {
         font-size: 14px;
         max-width: 157px;
         margin-bottom: 20px;

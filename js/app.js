@@ -168,12 +168,11 @@ function updateTimer() {
   const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
-  const formattedMinutes = minutes.toString().padStart(2, '0');
-  const formattedSeconds = seconds.toString().padStart(2, '0');
-
   document.getElementById('timer').innerHTML = 
-      `${days} Kun ${hours}:${formattedMinutes}:${formattedSeconds}`;
+      `${days}:${hours}:${minutes}:${seconds}`;
 }
 
+// Har 1 sekundda yangilash
 setInterval(updateTimer, 1000);
+// Birinchi marta darhol ishga tushirish
 updateTimer();
