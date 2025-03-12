@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #b9cbe3, #eac7d2);
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    padding-bottom: 60px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1300px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+
+
+.progress-bar {
+    width: 100%;
+    height: 12px;
+    background: #d1d5db;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.progress {
+    width: 90%;
+    height: 100%;
+    background: #a000ff;
+    border-radius: 10px;
+}
+
+.info-box {
+    border: 1px solid #d1d5db;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.emoji {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.emoji img {
+    width: 40px;
+    height: 40px;
+}
+
+.subscribe-btn {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    max-width: 350px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 50px;
+    background-color: #178cfb;
+    border-color: transparent;
+    transition: background 0.3s ease-in-out;
+    box-shadow: 0px 5px 0px 0px rgba(1, 69, 108, 1);
+}
+
+.subscribe-btn:hover {
+    background: #0056b3;
+}
+
+/* 📱 **Responsiv uchun Media Queries** */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .container {
+        padding: 20px;
+        padding-bottom: 40px;
+    }
+
+    .progress-bar {
+        max-width: 300px;
+    }
+
+    .info-box {
+        font-size: 14px;
+        max-width: 100%;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .subscribe-btn {
+        font-size: 16px;
+        min-height: 55px;
+        max-width: 300px;
+    }
+
+    .emoji img {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .container {
+        padding: 15px;
+        padding-bottom: 30px;
+    }
+
+    .progress-bar {
+        max-width: 250px;
+    }
+
+    .info-box {
+        font-size: 13px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .subscribe-btn {
+        font-size: 14px;
+        min-height: 50px;
+        max-width: 280px;
+    }
+
+    .emoji img {
+        width: 32px;
+        height: 32px;
+    }
+}
