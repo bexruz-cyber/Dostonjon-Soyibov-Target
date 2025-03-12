@@ -10,7 +10,7 @@ button{
 }
 
 .target {
-    background-image: url(../img/targetBg.png);
+    background-image: url(../img/targetBg.webp);
     background-size: cover;
     background-position: center center;
     min-height: 100vh;
@@ -515,7 +515,7 @@ input{
         -webkit-backdrop-filter: blur(0px);
     }
     .bg-none{
-        display: block;
+        display: flex;
         margin-bottom: 0;
     }
     .targetSubtitle{
