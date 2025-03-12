@@ -10,6 +10,7 @@ button{
 }
 
 .target {
+    background-color: #000;
     background-image: url(../img/targetBg.webp);
     background-size: cover;
     background-position: center center;
