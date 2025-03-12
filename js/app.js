@@ -43,19 +43,29 @@ overlay.addEventListener("click", function () {
     overlay.style.display = "none";
     formBox.classList.remove("form-box-active");
   });
-const phoneInput = document.getElementById("phone");
-phoneInput.addEventListener("input", function (e) {
-  let value = e.target.value.replace(/[^\d]/g, "");
-  if (value.length > 3) {
-    value = value.slice(0, 12); // Limit to 12 digits including +998
-    let formatted = "+998";
-    if (value.length > 3) formatted += " " + value.slice(3, 5);
-    if (value.length > 5) formatted += " " + value.slice(5, 8);
-    if (value.length > 8) formatted += " " + value.slice(8, 10);
-    if (value.length > 10) formatted += " " + value.slice(10, 12);
-    e.target.value = formatted;
-  }
-});
+
+  
+  const phoneInput = document.getElementById("phone");
+
+  phoneInput.addEventListener("keypress", function (e) {
+    // Agar kiritilgan belgi raqam bo‘lmasa, kiritishni to‘xtatamiz
+    if (!/[0-9]/.test(e.key)) {
+      e.preventDefault();
+    }
+  });
+  
+  phoneInput.addEventListener("input", function (e) {
+    let value = e.target.value.replace(/[^\d]/g, "");
+    if (value.length > 3) {
+      value = value.slice(0, 12); // Limit to 12 digits including +998
+      let formatted = "+998";
+      if (value.length > 3) formatted += " " + value.slice(3, 5);
+      if (value.length > 5) formatted += " " + value.slice(5, 8);
+      if (value.length > 8) formatted += " " + value.slice(8, 10);
+      if (value.length > 10) formatted += " " + value.slice(10, 12);
+      e.target.value = formatted;
+    }
+  });
 
 form.addEventListener("submit", async function (e) {
   e.preventDefault();
