@@ -60,6 +60,7 @@
             <div class="progressBox">
                 <div class="progress"></div>
             </div>
+            <div class="targetTitle timer" id="countdown">00:60</div>
             <img src="./img/target/giftMobile.png" class="giftMobile" alt="">
             <p class="giftTextMobile">Sizning sovgangiz tayyor</p>
 
@@ -114,6 +115,30 @@
             </a>
         </div>
     </section>
+
+    <script>
+        // Countdown timer from 60 seconds
+        let timeLeft = 60;
+        const timerElement = document.getElementById('countdown');
+
+        const countdown = setInterval(() => {
+            timeLeft--;
+            let minutes = Math.floor(timeLeft / 60);
+            let seconds = timeLeft % 60;
+            
+            // Add leading zeros if needed
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+            
+            timerElement.textContent = `${minutes}:${seconds}`;
+
+            // Stop timer at 0
+            if (timeLeft <= 0) {
+                clearInterval(countdown);
+                timerElement.textContent = "00:00";
+            }
+        }, 1000);
+    </script>
 </body>
 
 </html>

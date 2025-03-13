@@ -49,7 +49,17 @@ body {
     color: white;
     margin-bottom: 34px;
 }
-
+.timer{
+    font-family: Benzin-Bold, sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 34px;
+}
 .progressBox {
     width: 100%;
     height: 14px;
