@@ -347,6 +347,7 @@ input {
     outline: none;
     border-radius: 5px;
     border: 1px solid rgba(128, 128, 128, 0.794);
+    font-size: 22px;
 }
 
 .submit-btn {
@@ -625,10 +626,13 @@ input {
         background-color: transparent;
         backdrop-filter: blur(0px);
         -webkit-backdrop-filter: blur(0px);
+        max-width: 320px;
     }
 
     .bg-none {
         display: flex;
+        width: 100%;
+        max-width: 371px;
         margin-bottom: 0;
     }
 
@@ -661,6 +665,7 @@ input {
 
     input {
         padding: 15px;
+        font-size: 20px;
     }
 
     label {

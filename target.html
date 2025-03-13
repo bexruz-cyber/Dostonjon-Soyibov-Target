@@ -26,9 +26,6 @@
             position: relative;
         }
     </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/target.css" media="print" onload="this.media='all'">
     <link rel="preload"
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -57,15 +54,64 @@
 
 <body>
     <section class="target">
-        <div class="container">
-            <div class="left">
-                <h1 class="title">Sizning sovg'angiz tayyor!</h1>
-                <p class="text">U sovg'ani olish uchun telegram kanalga obuna bo'ling </p>
-                <a href="https://t.me/+MUN7R09Fv0hjNDMy" class="btn">Obuna bo'lish</a>
+        <div class="targetContainer">
+            <h1 class="targetTitle">Ro’yxatdan o’tish <br> 90% yakunlandi</h1>
+
+            <div class="progressBox">
+                <div class="progress"></div>
             </div>
-            <div class="right">
-                <img src="./img/target/gift.png" alt="" class="rightImg">
+            <img src="./img/target/giftMobile.png" class="giftMobile" alt="">
+            <p class="giftTextMobile">Sizning sovgangiz tayyor</p>
+
+            <div class="targetInfo">
+                <div class="telegramright">
+                    <svg width="64" height="56" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_1_13)">
+                            <path
+                                d="M31.9334 1.33334L26.9386 26.8347C26.9386 26.8347 26.724 28 25.2786 28C24.5106 28 24.1146 27.6347 24.1146 27.6347L13.296 18.6573L8.00264 15.9893L1.20934 14.1827C1.20934 14.1827 0 13.8333 0 12.8333C0 12 1.244 11.6027 1.244 11.6027L29.6654 0.312005C29.664 0.310671 30.5334 -0.00132907 31.1666 4.26136e-06C31.556 4.26136e-06 32 0.166671 32 0.666671C32 1 31.9334 1.33334 31.9334 1.33334Z"
+                                fill="white" />
+                            <path
+                                d="M17.3333 22.0065L12.7653 26.5052C12.7653 26.5052 12.5666 26.6585 12.3013 26.6652C12.2093 26.6678 12.1106 26.6532 12.0093 26.6079L13.2946 18.6545L17.3333 22.0065Z"
+                                fill="#B0BEC5" />
+                            <path
+                                d="M26.5294 5.59475C26.304 5.30141 25.888 5.24809 25.5946 5.47075L8 16.0001C8 16.0001 10.808 23.8561 11.236 25.2161C11.6654 26.5775 12.0094 26.6094 12.0094 26.6094L13.2946 18.6561L26.404 6.52808C26.6974 6.30541 26.752 5.88808 26.5294 5.59475Z"
+                                fill="#CFD8DC" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_1_13">
+                                <rect width="32" height="28" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+                <h2 class="targetInfoText mb-29">
+                    U sovgani olish uchun telegram kanakga o'tib obuna boling.
+                </h2>
+                <img src="./img/emoji.webp" class="emoji" alt="emoji">
             </div>
+            <img src="./img/target/gift.png" class="giftImg" alt="gift">
+            <p class="giftText">Obunachilarimiz uchun maxsus sovg’alar tayyorlaganmiz 🤫</p>
+            <a href="https://t.me/+MUN7R09Fv0hjNDMy" class="subsCribeBtn">
+                <svg width="32" height="28" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1_13)">
+                        <path
+                            d="M31.9334 1.33334L26.9386 26.8347C26.9386 26.8347 26.724 28 25.2786 28C24.5106 28 24.1146 27.6347 24.1146 27.6347L13.296 18.6573L8.00264 15.9893L1.20934 14.1827C1.20934 14.1827 0 13.8333 0 12.8333C0 12 1.244 11.6027 1.244 11.6027L29.6654 0.312005C29.664 0.310671 30.5334 -0.00132907 31.1666 4.26136e-06C31.556 4.26136e-06 32 0.166671 32 0.666671C32 1 31.9334 1.33334 31.9334 1.33334Z"
+                            fill="white" />
+                        <path
+                            d="M17.3333 22.0065L12.7653 26.5052C12.7653 26.5052 12.5666 26.6585 12.3013 26.6652C12.2093 26.6678 12.1106 26.6532 12.0093 26.6079L13.2946 18.6545L17.3333 22.0065Z"
+                            fill="#B0BEC5" />
+                        <path
+                            d="M26.5294 5.59475C26.304 5.30141 25.888 5.24809 25.5946 5.47075L8 16.0001C8 16.0001 10.808 23.8561 11.236 25.2161C11.6654 26.5775 12.0094 26.6094 12.0094 26.6094L13.2946 18.6561L26.404 6.52808C26.6974 6.30541 26.752 5.88808 26.5294 5.59475Z"
+                            fill="#CFD8DC" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_1_13">
+                            <rect width="32" height="28" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                OBUNA BO'LISH
+            </a>
         </div>
     </section>
 </body>
