@@ -41,7 +41,7 @@ body {
 }
 
 .left {
-    max-width: 450px;
+    max-width: 452px;
     width: 100%;
 }
 
@@ -108,7 +108,7 @@ body {
     .title{
         font-size: 27px;
         text-align: center;
-        max-width: 246px;
+        max-width: 340px;
         line-height: 30px;
     }
     .text{
