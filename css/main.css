@@ -83,7 +83,8 @@ button {
     display: flex;
     align-items: end;
 }
-.top{
+
+.top {
     display: flex;
     align-items: center;
 }
@@ -444,7 +445,8 @@ input {
 
     font-size: 18px;
 }
-.timerBox{
+
+.timerBox {
     display: none;
 }
 
@@ -502,10 +504,10 @@ input {
         top: 5px;
     }
 
-    .timerBox{
+    .timerBox {
         display: flex;
     }
-    
+
 
     .targetLeft {
         display: flex;
@@ -615,7 +617,7 @@ input {
     }
 
     .targetSaleFree {
-    color: #00ff95;
+        color: #00ff95;
         font-size: 20px;
     }
 
@@ -661,13 +663,16 @@ input {
     label {
         font-size: 18px;
     }
-    .top-title{
+
+    .top-title {
         font-size: 16px;
     }
-    .targetBtnGreen{
+
+    .targetBtnGreen {
         max-width: 125px;
     }
-    .target{
+
+    .target {
         padding-top: 10px;
     }
 }
@@ -678,20 +683,31 @@ input {
         line-height: 22px;
         margin-bottom: 10px;
     }
-    .top-title{
+
+    .top-title {
         font-size: 16px !important;
     }
-    .targetBtnRed{
+
+    .targetBtnRed {
         min-height: 63px;
     }
-    .targetPricebox{
+
+    .targetPricebox {
         margin-bottom: 10px;
     }
+
     .targetBtnGreen {
         font-size: 14px;
         margin-bottom: 10px;
     }
-    #timer{
+
+    #timer {
         font-size: 40px;
+    }
+}
+
+@media(max-width: 375px) {
+    .targetBtnRed {
+        font-size: 12px;
     }
 }
