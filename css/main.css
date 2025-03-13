@@ -22,6 +22,57 @@ button {
     overflow: hidden;
 }
 
+.text-white {
+    color: white;
+}
+
+.text-green {
+    color: rgb(90, 183, 145);
+}
+
+.text-yellow {
+    color: rgb(255, 196, 0);
+}
+
+.targetLeft {
+    max-width: 600px;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.targetTitle {
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 28px;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+}
+
+.targetTitleMain {
+    max-width: 371px;
+    margin-bottom: 25px;
+}
+
+.targetBtnGreen {
+    border-width: 2px;
+    border-radius: 4px 4px 4px 4px;
+    background-color: #5ab791;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    max-width: 175px;
+    width: 100%;
+    padding: 5px;
+    font-size: 17px;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.targetInfo {
+    margin-bottom: 80px;
+}
+
 .targetContainer {
     max-width: 1200px;
     width: 100%;
@@ -120,6 +171,7 @@ button {
     font-size: 30px;
     text-transform: uppercase;
     font-weight: 700;
+    color: #00ff95;
 }
 
 .targetGift {
@@ -563,6 +615,7 @@ input {
     }
 
     .targetSaleFree {
+    color: #00ff95;
         font-size: 20px;
     }
 
@@ -621,7 +674,7 @@ input {
 
 @media(max-width:450px) {
     .targetTitle {
-        font-size: 18px;
+        font-size: 18px !important;
         line-height: 22px;
         margin-bottom: 10px;
     }
