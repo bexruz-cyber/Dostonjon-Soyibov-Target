@@ -14,10 +14,19 @@ presentations.forEach((presentation) => {
     presentation.addEventListener("mouseout", function () {
       rightInfoListBox.style.display = "none";
     });
+
+    presentation.addEventListener("click", function () {
+      if (rightInfoListBox.style.display === "block") {
+        rightInfoListBox.style.display = "none";
+      } else {
+        rightInfoListBox.style.display = "block";
+      }
+    });
   } else {
     console.error("Mos .rightInfoListBox topilmadi:", presentation);
   }
 });
+
 
 let openFormBtn = document.querySelectorAll(".openFormBtn");
 let overlay = document.querySelector(".form-overlay");
