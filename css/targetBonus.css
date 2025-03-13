@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +13,12 @@
 body {
     background-color: black;
     overflow-x: hidden;
-    background-image: url(../img/targetBonus/bg.png);
+
+}
+
+
+.subs {
+    background-image: url(../../img/targetBonus/bg.png);
     background-size: cover;
     background-position: center center;
     height: 100vh;
@@ -24,9 +28,7 @@ body {
     font-family: Montserrat, sans-serif;
 }
 
-
-.target {}
-.mobileTimer{
+.mobileTimer {
     display: none;
 }
 
@@ -102,57 +104,67 @@ body {
 }
 
 @media(max-width: 768px) {
-    .mobileTimer{
+    .mobileTimer {
         display: block;
     }
+
     .container {
         flex-direction: column-reverse;
         gap: 20px;
     }
-    .left{
+
+    .left {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .title{
+
+    .title {
         font-size: 27px;
         text-align: center;
         max-width: 340px;
         line-height: 30px;
     }
-    .text{
+
+    .text {
         font-size: 13px;
         line-height: 20px;
         max-width: 347px;
         text-align: center;
     }
-    .btn{
+
+    .btn {
         max-width: 270px;
         font-size: 12px;
         line-height: 23px;
         padding: 14px;
     }
-    .right{
+
+    .right {
         max-width: 122px;
         width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
 }
-@media(max-width: 425px){
-    .title{
+
+@media(max-width: 425px) {
+    .title {
         margin-bottom: 18px;
     }
-    .text{
+
+    .text {
         max-width: 212px;
         font-size: 12px;
         margin-bottom: 20px;
     }
-    .btn{
+
+    .btn {
         width: 260px;
         border-radius: 10px;
     }
-    .container{
+
+    .container {
         gap: 18px;
     }
 }
