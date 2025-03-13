@@ -639,6 +639,9 @@ input {
     .targetItem {
         font-size: 14px;
     }
+    .targetBtnRed {
+        min-height: 63px;
+    }
 }
 
 @media(max-width: 560px) {
@@ -675,6 +678,7 @@ input {
     .target {
         padding-top: 10px;
     }
+
 }
 
 @media(max-width:450px) {
@@ -688,9 +692,7 @@ input {
         font-size: 16px !important;
     }
 
-    .targetBtnRed {
-        min-height: 63px;
-    }
+   
 
     .targetPricebox {
         margin-bottom: 10px;
