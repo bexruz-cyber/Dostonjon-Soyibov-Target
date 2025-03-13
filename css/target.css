@@ -217,6 +217,9 @@ body {
 }
 
 @media(max-width: 768px) {
+    .mobileTimer{
+        display: block;
+    }
     .targetTitle {
         font-size: 28px;
         line-height: 32px;

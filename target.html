@@ -194,7 +194,8 @@
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/targetBonus.css" media="print" onload="this.media='all'">
     <link rel="preload"
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -224,9 +225,14 @@
 <body>
     <section class="target">
         <div class="container">
+
             <div class="left">
                 <h1 class="title">Sizning sovg'angiz tayyor!</h1>
                 <p class="text">U sovg'ani olish uchun telegram kanalga obuna bo'ling </p>
+                <div class="mobileTimer">
+                    <p class="text">Tezroq obuna bolmasangiz sahifa yopiladi.</p>
+                    <div class="targetTitle timer" id="countdown">00:60</div>
+                </div>
                 <a href="https://t.me/+MUN7R09Fv0hjNDMy" class="btn">Obuna bo'lish</a>
             </div>
             <div class="right">
@@ -234,6 +240,31 @@
             </div>
         </div>
     </section>
+
+
+    <script>
+        // Countdown timer from 60 seconds
+        let timeLeft = 60;
+        const timerElement = document.getElementById('countdown');
+
+        const countdown = setInterval(() => {
+            timeLeft--;
+            let minutes = Math.floor(timeLeft / 60);
+            let seconds = timeLeft % 60;
+
+            // Add leading zeros if needed
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+
+            timerElement.textContent = `${minutes}:${seconds}`;
+
+            // Stop timer at 0
+            if (timeLeft <= 0) {
+                clearInterval(countdown);
+                timerElement.textContent = "00:00";
+            }
+        }, 1000);
+    </script>
 </body>
 
 </html>

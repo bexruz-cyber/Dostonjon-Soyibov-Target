@@ -26,6 +26,10 @@ body {
 
 
 .target {}
+.mobileTimer{
+    display: none;
+}
+
 
 .container {
     max-width: 893px;
@@ -98,6 +102,9 @@ body {
 }
 
 @media(max-width: 768px) {
+    .mobileTimer{
+        display: block;
+    }
     .container {
         flex-direction: column-reverse;
         gap: 20px;
