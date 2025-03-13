@@ -299,8 +299,8 @@ body {
     }
 
     .giftTextMobile {
-        font-size: 14px;
-        line-height: 16px;
+        font-size: 20px;
+        line-height: 22px;
     }
 }
 
@@ -308,6 +308,9 @@ body {
     .targetTitle {
         font-size: 20px;
     }
+}
+.mb-10{
+    margin-bottom: 10px;
 }
 
 
