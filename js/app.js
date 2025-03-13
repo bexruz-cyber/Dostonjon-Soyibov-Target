@@ -7,14 +7,6 @@ presentations.forEach((presentation) => {
     rightInfoListBox &&
     rightInfoListBox.classList.contains("rightInfoListBox")
   ) {
-    presentation.addEventListener("mouseover", function () {
-      rightInfoListBox.style.display = "block";
-    });
-
-    presentation.addEventListener("mouseout", function () {
-      rightInfoListBox.style.display = "none";
-    });
-
     presentation.addEventListener("click", function () {
       if (rightInfoListBox.style.display === "block") {
         rightInfoListBox.style.display = "none";

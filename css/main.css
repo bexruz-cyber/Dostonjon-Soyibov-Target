@@ -32,7 +32,10 @@ button {
     display: flex;
     align-items: end;
 }
-
+.top{
+    display: flex;
+    align-items: center;
+}
 
 
 .targetSubtitle {
@@ -484,6 +487,7 @@ input {
 
     .targetTitle {
         text-align: center;
+        font-size: 16px;
     }
 
     .targetInfo {
@@ -604,19 +608,35 @@ input {
     label {
         font-size: 18px;
     }
+    .top-title{
+        font-size: 16px;
+    }
+    .targetBtnGreen{
+        max-width: 125px;
+    }
+    .target{
+        padding-top: 10px;
+    }
 }
 
 @media(max-width:450px) {
     .targetTitle {
-        font-size: 20px;
+        font-size: 18px;
         line-height: 22px;
         margin-bottom: 10px;
     }
-
+    .top-title{
+        font-size: 16px !important;
+    }
+    .targetBtnRed{
+        min-height: 63px;
+    }
+    .targetPricebox{
+        margin-bottom: 10px;
+    }
     .targetBtnGreen {
         font-size: 14px;
-        max-width: 157px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     #timer{
         font-size: 40px;
